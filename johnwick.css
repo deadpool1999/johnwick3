@@ -158,11 +158,10 @@ body h1{
     position: relative;
     background : black ;
     list-style: none;
-    
+    margin-top: 50px  ;
     text-align: center ;
-    
     padding: 10% ;
-     
+    font-size: 5px ;
     transition-property: all  ;
     transition-duration: 0.6s ;
     z-index: -1;
@@ -206,7 +205,7 @@ body h1{
 
     visibility: visible ;
     opacity: 1;
-    transform: translateY(500px) translateX(-800px) scale(13) ;
+    transform: translateY(600px) translateX(-800px) scale(13) ;
 }
 .dropdown .menu .menuitms >li >a:hover{
     color: aqua ;
@@ -400,4 +399,44 @@ body h1{
     
     opacity: 0;
     transform: translateY(-200px) ;
+}
+@media screen and (max-width:600px)
+{
+    body{
+        background: url("./bg_pt.jpg") ;
+        background-position-x: -200px ;
+         
+    }
+    .carousel1{
+        left: 10px ;
+        top: 40vh ;
+    }
+    .carouselpoints{
+        left: 30px ;
+        top: 54vh ;
+    }
+    body h1{
+        top: 75vh ;
+        left: 10px ;
+    }
+    .reviews{
+        top: 25vh ;
+        left: 40vh ; 
+    }
+    #rt2{
+        left: 50px ;
+        size: 100% ;
+        width: 60% ;
+
+    }
+    .dropdown .toggler:checked ~ .menu{
+
+        visibility: visible ;
+        opacity: 1;
+        transform: translateY(400px) translateX(-930px) scale(10) ;
+    }
+    #menuitems{
+        padding-top: 50% ;   
+    }
+
 }
